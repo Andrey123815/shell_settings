@@ -6,6 +6,7 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/usr/local/bin
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
@@ -51,5 +52,9 @@ bind_enter_key
 zle -N zle-line-finish bind_enter_key
 
 alias gs="git status"
-alias gc="git commit"
+alias gco="git checkout"
+alias ga="git add"
+alias gc="git commit -m"
 alias gp="git push"
+alias gpo="git pull origin"
+alias gfa="git fetch --all"
